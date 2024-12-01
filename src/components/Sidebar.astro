@@ -1,0 +1,51 @@
+---
+import Logo from "./Logo.astro";
+
+
+---
+
+<aside data-theme="dark">
+    <menu role="list">
+        <!-- <li><a href="/" aria-label="Home">
+        <Logo /></a></li> -->
+        <!-- <li>Link</li> -->
+    </menu>
+</aside>
+
+<style>
+    aside {
+        background: var(--clr-surface);
+        color: var(--clr-text-body);
+        grid-column: sidebar;
+        grid-row: 1 / span 3;
+        padding: var(--space-m);
+        display: grid;
+        grid-template-rows: subgrid;
+
+        @media (min-width: 600px) {
+            padding: var(--space-l) var(--space-xl);
+        }
+
+        menu {
+            grid-row: main-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+            > * + * {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: var(--space-l);
+            &::before {
+                content: "";
+                padding-block: var(--space-2xl);
+                height: 100%;
+                border-left: 1px solid var(--clr-text-body);
+                opacity: .45;
+            }
+        }
+        }
+    }
+</style>

@@ -1,0 +1,18 @@
+[
+  {
+    "language": "html",
+    "icon": "programming/html"
+  },
+  {
+    "language": "css",
+    "icon": "programming/css"
+  },
+  {
+    "language": "javascript",
+    "icon": "programming/js"
+  },
+  {
+    "language": "astro",
+    "icon": "programming/astro"
+  }
+]

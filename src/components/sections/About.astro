@@ -1,0 +1,71 @@
+---
+
+import Image from "astro/components/Image.astro";
+import Projects from "./Projects";
+
+import portrait from "../../assets/img/portrait.jpg"
+---
+
+    <!-- <section> -->
+        <article class="flow-space">
+             <Image src={portrait} alt="Portrait of S. S. Soto" />
+             <div>
+                 <h2>UI/UX Design and Frontend Developer</h2>
+                 <ul>
+                     <li>capital N Nerd</li>
+                     <li>history enthusiast</li>
+                     <li>loves stories</li>
+                     <li>loves gaming—video, board, and otherwise</li>
+                     <li>loves music—kpop, rock, and everything in between</li>
+                     <li>cat worshipper</li>
+                 </ul>
+                 <p>Studying multimedia design and frontend development on my third semester. Check out my work below.</p>
+             </div>
+         </article>
+
+    <!-- </section> -->
+
+<style>
+        
+
+        article {
+            display: grid;
+            gap: 2rem;
+            place-items: center;
+            background: rgba(245, 246, 250, 0.45);
+            backdrop-filter: blur(10px);
+            padding: var(--space-m);
+            border-radius: var(--text-size-body);
+            border: 1px solid var(--cosmos-100);
+
+            div {
+                display: grid;
+                gap: var(--space-s)
+            }
+            
+            ul {
+                list-style-type: disc;
+                margin-inline-start: 1.5em;
+            }
+            > * + * {
+                margin-block-start: 1em;
+            }
+
+
+            @media (min-width: 800px) {
+                display: flex;
+                gap: 4rem;
+                padding: var(--space-2xl);
+            }
+        }
+
+
+    img {
+        max-width: 20rem;
+        aspect-ratio: 1 / 1.45;
+        object-fit: cover;
+        object-position: 50% 20%;
+        border-radius: var(--text-size-body);
+        /* max-width: 8rem; */
+    }
+</style>

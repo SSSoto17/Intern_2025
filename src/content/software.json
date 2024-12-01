@@ -1,0 +1,26 @@
+[
+  {
+    "software": "Adobe Photoshop",
+    "icon": "software/photoshop"
+  },
+  {
+    "software": "Adobe Illustrator",
+    "icon": "software/illustrator"
+  },
+  {
+    "software": "Adobe InDesign",
+    "icon": "software/indesign"
+  },
+  {
+    "software": "Figma",
+    "icon": "software/figma"
+  },
+  {
+    "software": "VS Code",
+    "icon": "software/vscode"
+  },
+  {
+    "software": "MS Office",
+    "icon": "software/office"
+  }
+]

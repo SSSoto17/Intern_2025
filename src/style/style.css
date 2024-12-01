@@ -1,0 +1,51 @@
+@layer reset, variables, layout;
+
+@import "reset.css" layer(reset);
+@import "variables.css" layer(variables);
+@import "layout.css" layer(layout);
+/* @import "global.css" layer(global); */
+/* @import "themes.css" layer(themes); */
+
+body {
+  background: var(--clr-surface);
+  color: var(--clr-text-body);
+  font-size: var(--text-size-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-text-heading);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--text-size-display);
+}
+
+h2 {
+  font-size: var(--text-size-main-heading);
+}
+
+h3 {
+  font-size: var(--text-size-heading-1);
+}
+h4 {
+  font-size: var(--text-size-heading-2);
+}
+
+[data-theme="dark"] {
+  --clr-surface: var(--clr-gradient-blue-dark);
+  --clr-text-body: var(--blue-haze-50);
+  --clr-text-heading: var(--blue-haze-50);
+}
+
+a {
+  color: var(--clr-text-body);
+  font-size: var(--text-size-link);
+  font-weight: 400;
+  text-decoration: none;
+}

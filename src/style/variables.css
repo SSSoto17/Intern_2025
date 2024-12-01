@@ -1,0 +1,138 @@
+/* IMPORTS */
+
+/* FONT: Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* FONT: Karla */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* COLOR PALETTE */
+
+:root {
+  /* BLUE HAZE */
+  --blue-haze-50: #f4f5f9;
+  --blue-haze-100: #ebecf4;
+  --blue-haze-200: #dbddea;
+  --blue-haze-300: #c0c3da; /* DEFAULT */
+  --blue-haze-400: #acadcd;
+  --blue-haze-500: #9796be;
+  --blue-haze-600: #857fac;
+  --blue-haze-700: #726d95;
+  --blue-haze-800: #5d5a79;
+  --blue-haze-900: #4e4c63;
+  --blue-haze-950: #2e2c3a;
+
+  /* MANATEE */
+  --manatee-50: #f4f6f9;
+  --manatee-100: #ebf0f4;
+  --manatee-200: #dbe2ea;
+  --manatee-300: #c5d0dc;
+  --manatee-400: #adb9cc;
+  --manatee-500: #8c99b6; /* DEFAULT */
+  --manatee-600: #8089ab;
+  --manatee-700: #6d7695;
+  --manatee-800: #5a6179;
+  --manatee-900: #4c5263;
+  --manatee-950: #2d3039;
+
+  /* COSMOS */
+  --cosmos-50: #fcf4f5;
+  --cosmos-100: #fae6e8;
+  --cosmos-200: #f8d6d9; /* DEFAULT */
+  --cosmos-300: #f0b1b7;
+  --cosmos-400: #e6838c;
+  --cosmos-500: #d85b66;
+  --cosmos-600: #c43e4a;
+  --cosmos-700: #a4313b;
+  --cosmos-800: #882c34;
+  --cosmos-900: #722a30;
+  --cosmos-950: #3d1216;
+
+  /* PINK */
+  --pink-50: #fdf3f4;
+  --pink-100: #fbe8e9;
+  --pink-200: #f8d3d8;
+  --pink-300: #f4bfc5; /* DEFAULT */
+  --pink-400: #e98391;
+  --pink-500: #dc576d;
+  --pink-600: #c73755;
+  --pink-700: #a82847;
+  --pink-800: #8d2440;
+  --pink-900: #79223c;
+  --pink-950: #430e1c;
+}
+
+/* COLOR TOKENS */
+
+:root {
+  /* GRADIENTS */
+  --clr-gradient-blue-light: linear-gradient(
+    oklch(from var(--blue-haze-50) calc(l + 0.025) c h),
+    var(--blue-haze-50)
+  );
+  --clr-gradient-blue-medium: linear-gradient(
+    var(--blue-haze-50),
+    var(--blue-haze-100)
+  );
+  --clr-gradient-blue-dark: linear-gradient(
+    var(--manatee-500),
+    var(--manatee-600)
+  );
+
+  --clr-surface: var(--clr-gradient-blue-light);
+  --clr-text-body: var(--blue-haze-800);
+  --clr-text-heading: var(--blue-haze-900);
+  --clr-border-light: var(--manatee-300);
+  --clr-border-dark: var(--blue-haze-700);
+}
+
+/* TYPE SCALE */
+
+:root {
+  --font-size--2: clamp(0.5642rem, 0.5379rem + 0.1318vw, 0.64rem);
+  --font-size--1: clamp(0.6771rem, 0.6343rem + 0.2138vw, 0.8rem);
+  --font-size-0: clamp(0.8125rem, 0.7473rem + 0.3261vw, 1rem);
+  --font-size-1: clamp(0.975rem, 0.8793rem + 0.4783vw, 1.25rem);
+  --font-size-2: clamp(1.17rem, 1.0335rem + 0.6826vw, 1.5625rem);
+  --font-size-3: clamp(1.404rem, 1.213rem + 0.955vw, 1.9531rem);
+  --font-size-4: clamp(1.6848rem, 1.4216rem + 1.3158vw, 2.4414rem);
+  --font-size-5: clamp(2.0218rem, 1.6635rem + 1.7913vw, 3.0518rem);
+}
+
+/* TEXT SIZES */
+
+:root {
+  --text-size-display: var(--font-size-5);
+  --text-size-main-heading: var(--font-size-4);
+  --text-size-heading-1: var(--font-size-3);
+  --text-size-heading-2: var(--font-size-2);
+  --text-size-body: var(--font-size-0);
+  --text-size-link: var(--font-size-1);
+}
+
+/* SPACING */
+
+:root {
+  --space-3xs: clamp(0.1875rem, 0.1658rem + 0.1087vw, 0.25rem);
+  --space-2xs: clamp(0.4375rem, 0.4158rem + 0.1087vw, 0.5rem);
+  --space-xs: clamp(0.625rem, 0.5815rem + 0.2174vw, 0.75rem);
+  --space-s: clamp(0.8125rem, 0.7473rem + 0.3261vw, 1rem);
+  --space-m: clamp(1.25rem, 1.163rem + 0.4348vw, 1.5rem);
+  --space-l: clamp(1.625rem, 1.4946rem + 0.6522vw, 2rem);
+  --space-xl: clamp(2.4375rem, 2.2418rem + 0.9783vw, 3rem);
+  --space-2xl: clamp(3.25rem, 2.9891rem + 1.3043vw, 4rem);
+  --space-3xl: clamp(4.875rem, 4.4837rem + 1.9565vw, 6rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.1875rem, 0.0788rem + 0.5435vw, 0.5rem);
+  --space-2xs-xs: clamp(0.4375rem, 0.3288rem + 0.5435vw, 0.75rem);
+  --space-xs-s: clamp(0.625rem, 0.4946rem + 0.6522vw, 1rem);
+  --space-s-m: clamp(0.8125rem, 0.5734rem + 1.1957vw, 1.5rem);
+  --space-m-l: clamp(1.25rem, 0.9891rem + 1.3043vw, 2rem);
+  --space-l-xl: clamp(1.625rem, 1.1467rem + 2.3913vw, 3rem);
+  --space-xl-2xl: clamp(2.4375rem, 1.894rem + 2.7174vw, 4rem);
+  --space-2xl-3xl: clamp(3.25rem, 2.2935rem + 4.7826vw, 6rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(0.8125rem, 0.3995rem + 2.0652vw, 2rem);
+}

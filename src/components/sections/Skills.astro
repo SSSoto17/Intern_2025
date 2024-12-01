@@ -1,0 +1,85 @@
+---
+import { Icon } from 'astro-icon/components'
+import ProLanguages from "./ProLanguages.astro"
+
+import langSkills from "../../content/languages.json"
+import proLangSkills from "../../content/prolanguages.json"
+import softwareSkills from "../../content/software.json"
+
+import { data } from "../../content/worktasks"
+
+---
+
+<section>
+    <article>
+        <section class="flow-space">
+            <h3 data-heading="tagline">What can I do?</h3>
+            <ul role="list" class="flow-space">
+                {data.map(task => <li>{task}</li>)}
+            </ul>
+        </section>
+        <ProLanguages data={proLangSkills} />
+            <section class="flow-space">
+                <h3 data-heading="tagline">Software</h3>
+                <ul role="list">
+                    {softwareSkills.map(soft => 
+                            <li>
+                                {/* <Icon name={soft.icon} /> */}
+                                {soft.software}</li>
+                        )}
+                </ul>
+            </section>
+            <section class="flow-space">
+                <h3 data-heading="tagline">Languages</h3>
+                <ul role="list">
+                    {langSkills.map(lang => 
+                            <li>{lang.language} <i>{lang.level}</i></li>
+                        )}
+                </ul>
+            </section>
+    </article>
+</section>
+
+<style>
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+        grid-template-rows: repeat(2, auto);
+        gap: var(--space-l) var(--space-xl-2xl);
+        place-self: center;
+        background: rgba(245, 246, 250, 0.45);
+        backdrop-filter: blur(10px);
+        padding: var(--space-xl);
+        border-radius: var(--text-size-body);
+        border: 1px solid var(--cosmos-100);
+        
+        @media (min-width:652px) {
+            padding-inline-end: var(--space-3xl);
+
+        }
+
+        section:first-of-type {
+            grid-column: 1 / -1;
+
+            li {
+                display: flex;
+                gap: var(--space-s);
+
+                &::before {
+                    content: url(../../icons/check.svg);
+                    color: var(--blue-haze-800);
+                    width: var(--font-size-0);
+                }
+            }
+        }
+
+        li {
+            --flow-space: var(--space-2xs);
+            i {
+                color: var(--blue-haze-700);
+                padding-inline: var(--space-s);
+            }
+        }
+    }
+</style>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "01",
+    "title": "Revenge of the Assassin",
+    "href": "https://sssoto17.github.io/website_revengeoftheassassin/",
+    "img": "../../assets/img/project_01.png",
+    "description": "Point and click game programmed with vanilla JS."
+  },
+  {
+    "id": "02",
+    "title": "Aria",
+    "href": "https://friendly-starburst-edeac4.netlify.app/",
+    "img": "pro02.src",
+    "description": "Website redesign for a vocal instructor."
+  },
+  {
+    "id": "03",
+    "title": "CPH Light Festival",
+    "href": "https://cphlightfestival-kea.netlify.app/",
+    "img": "pro03.src",
+    "description": "Redesign for CPH Light Festival with focus on presentation of installations."
+  },
+  {
+    "id": "04",
+    "title": "AskExperts",
+    "href": "https://soto-temaopgave-frontenddesign.netlify.app/",
+    "img": "pro04.src",
+    "description": "Implementation of Figma design in the Astro framework."
+  },
+  {
+    "id": "05",
+    "title": "To Do App",
+    "href": "https://sotos-todo.netlify.app/",
+    "img": "pro05.src",
+    "description": "Programming of a to do app, with the ability to create lists of tasks."
+  }
+]
