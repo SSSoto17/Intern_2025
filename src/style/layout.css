@@ -1,5 +1,5 @@
 body {
-  height: 100svh;
+  min-height: 100svh;
   display: grid;
   grid-template-columns:
     [sidebar] auto [margin full-bleed-start] minmax(2.5svw, 1fr)

@@ -53,7 +53,7 @@ const Projects = () => {
 
   return (
     <section>
-      {/* <ul className="sm:flex gap-6 place-content-end cursor-default mb-4">
+      <ul className="hidden md:flex gap-6 place-content-end cursor-default mb-4">
         {projects.map((project) => {
           return (
             <li
@@ -75,8 +75,8 @@ const Projects = () => {
             </li>
           );
         })}
-      </ul> */}
-      <ul className="md:flex md:w-full md:h-2/5 border border-[var(--cosmos-100)] [&>*+*]:border-l [&>*+*]:border-[var(--cosmos-100)] rounded-2xl overflow-clip">
+      </ul>
+      <ul className="lg:flex lg:w-full lg:h-4/5 border border-[var(--cosmos-100)] [&>*+*]:border-l [&>*+*]:border-[var(--cosmos-100)] rounded-2xl overflow-clip">
         {projects.map((project) => {
           return (
             <Project
