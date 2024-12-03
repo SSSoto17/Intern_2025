@@ -76,7 +76,7 @@ const Projects = () => {
           );
         })}
       </ul>
-      <ul className="lg:flex lg:w-full lg:h-4/5 border border-[var(--cosmos-100)] [&>*+*]:border-l [&>*+*]:border-[var(--cosmos-100)] rounded-2xl overflow-clip">
+      <ul className="lg:flex lg:w-full lg:h-80 border border-[var(--cosmos-100)] [&>*+*]:border-l [&>*+*]:border-[var(--cosmos-100)] rounded-2xl overflow-clip">
         {projects.map((project) => {
           return (
             <Project
